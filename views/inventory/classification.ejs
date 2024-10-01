@@ -1,0 +1,13 @@
+<!--Add title and Page title -->
+
+<% if (title) { %>
+    <h1><%= title %></h1>
+    <% } else {
+      res.redirect('/')
+    } %>
+
+<!--future message feature -->
+<%# messages() %>
+
+<!--Inventory items display -->
+<%- grid %>
